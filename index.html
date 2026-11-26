@@ -46,6 +46,7 @@
     .hero h1 em{font-weight:400;color:var(--gold-soft);font-style:italic}
     .hero p{max-width:480px;font-size:17px;line-height:1.74;color:#d8e2db;margin:0 0 32px}
     .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .hero p.download-meta{margin:14px 0 0;font-size:12px;line-height:1.6;color:#d8e2db}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:49px;padding:13px 23px;border-radius:999px;font-weight:800;font-size:13px;transition:transform .2s,background .2s}
     .btn:hover{transform:translateY(-2px)}
     .btn-gold{background:var(--gold);color:#173d33}
@@ -127,6 +128,8 @@
     @media(max-width:850px){.navlinks{display:none}.nav{min-height:70px}.hero-wrap{padding:18px 0 35px}.hero{min-height:800px}.hero-content{padding:55px 35px 0;width:100%}.hero h1{max-width:650px;font-size:61px}.hero p{max-width:590px}.hero-visual{inset:350px 0 0 0}.phone-main{top:28px;right:17%;width:228px}.phone-side{top:74px;right:47%;width:203px}.halo{top:-70px;right:10%}.hero-notes{margin-top:28px}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr;gap:37px}.split-copy{max-width:680px}.showcase-card{min-height:510px}.gallery{grid-template-columns:repeat(5,180px);overflow-x:auto;scroll-snap-type:x mandatory;padding:12px 10px 27px;margin-inline:-10px}.gallery-item{scroll-snap-align:start}.mission-inner{grid-template-columns:1fr;gap:32px}}
     @media(max-width:600px){.container{width:min(100% - 30px,1160px)}.topnote{font-size:10px}.brand{font-size:24px}.brand-icon{width:40px;height:40px}.nav-cta{padding:10px 15px}.hero{border-radius:23px;min-height:735px}.hero-content{padding:43px 26px 0}.hero h1{font-size:48px;max-width:370px;margin:17px 0 16px}.hero p{font-size:14px;line-height:1.75;margin-bottom:23px}.hero-eyebrow{font-size:10px}.btn{font-size:12px;padding:11px 18px;min-height:44px}.hero-notes{gap:14px;margin-top:24px;font-size:10px}.hero-visual{inset:365px 0 0}.phone-main{top:25px;right:13%;width:187px;border-radius:30px;padding:6px}.phone-main .screen{border-radius:22px}.phone-side{top:65px;right:50%;width:158px;border-radius:26px;padding:5px}.phone-side .screen{border-radius:19px}.hero-bottom{width:420px;height:75px}.section-space{padding:55px 0}.section-title{font-size:38px}.section-lead{font-size:14px}.feature-grid{grid-template-columns:1fr;gap:12px;margin-top:25px}.feature-card{min-height:unset;padding:23px}.feature-card .icon{margin-bottom:18px}.split-copy h2{font-size:37px}.showcase-card{min-height:445px}.reading-phone{width:203px}.floating-label.top{top:65px;left:13px}.floating-label.bottom{bottom:61px;right:10px}.gallery{grid-template-columns:repeat(5,150px)}.gallery-image{border-width:4px}.screens{padding:58px 0}.mission{padding:60px 0}.mission h2{font-size:42px}.stat{min-height:130px;padding:22px 17px}.stat strong{font-size:27px}.stat span{font-size:12px}.details{padding:56px 0}.faq{margin-top:27px}.footer-top,.footer-bottom{flex-direction:column;align-items:flex-start}.footer-links{gap:16px 27px}.footer-bottom{gap:10px}}
     @media(max-width:385px){.hero h1{font-size:43px}.hero{min-height:710px}.hero-visual{top:371px}.phone-main{right:8%}.phone-side{right:49%}.hero-notes{gap:10px}.nav-cta{font-size:11px}}
+    @media(max-width:850px){.hero-visual{position:relative;inset:auto;height:500px;margin-top:24px}}
+    @media(max-width:600px){.hero-visual{height:420px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Seeker","applicationCategory":"EducationApplication","operatingSystem":"Android","description":"An ad-free Islamic learning companion with Kashmiri Quran translation, Hadith, live classes, and prayer tools.","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}}</script>
@@ -149,7 +152,8 @@
           <div class="hero-eyebrow eyebrow"><span class="small-sparkle" aria-hidden="true">✦</span> THE KASHMIRI ISLAMIC COMPANION</div>
           <h1 id="hero-title">Seek knowledge.<br><em>Strengthen faith.</em></h1>
           <p>A thoughtful space for the Quran in Kashmiri, Hadith, Duas, live learning and everyday Islamic essentials — all in one free app.</p>
-          <div class="hero-actions"><a href="#features" class="btn btn-gold">Discover Seeker <span aria-hidden="true">↗</span></a><a href="privacy.html" class="btn btn-outline">Privacy &amp; trust</a></div>
+          <div class="hero-actions"><a href="https://github.com/huzaifmushtaq/-seeker-legal/releases/download/v1.0.1/seeker-v1.0.1.apk" class="btn btn-gold" download="seeker-v1.0.1.apk" aria-describedby="download-meta">Download APK <span aria-hidden="true">↓</span></a><a href="#features" class="btn btn-outline">Discover Seeker <span aria-hidden="true">↗</span></a><a href="privacy.html" class="btn btn-outline">Privacy &amp; trust</a></div>
+          <p class="download-meta" id="download-meta">Version 1.0.1 · 117 MB · Android 7.0+ · ARM64</p>
           <div class="hero-notes"><span><b class="check">✓</b> Free to use</span><span><b class="check">✓</b> No ads</span><span><b class="check">✓</b> Android app</span></div>
         </div>
         <div class="hero-visual" aria-label="Real screenshots of the Seeker Android application">
